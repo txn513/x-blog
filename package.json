@@ -1,14 +1,20 @@
 {
-  "name": "x-blog",
+  "name": "simple-express-boilerplate",
   "version": "1.0.0",
   "description": "a personal blog",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "pm2 start app.js --watch"
+    "start": "node app.js",
+    "pm2": "pm2 start app.js",
+    "pm2:watch": "pm2 start app.js --watch",
+    "pm2:stop": "pm2 stop app",
+    "pm2:delete": "pm2 delete app"
   },
   "keywords": [
-    "blog"
+    "express",
+    "node",
+    "boilerplate"
   ],
   "author": "Xuning Tian",
   "license": "MIT",
